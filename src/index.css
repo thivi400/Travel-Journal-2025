@@ -99,10 +99,15 @@ article.journal-entry{
   display: none;
 }
 @media (max-width: 768px) {
+  header{
+    height: 89px;
+  }
   article.journal-entry{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    text-align: center;
   }
   .mobile-h2{
     display: block ;

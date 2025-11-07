@@ -11,7 +11,7 @@ export default function Entry(props){
             <div className="content">
                 <img className="marker" src={marker} alt="marker-logo" />
                 <span>{props.location}</span>
-                <a href={props.link} alt="google map link">View on Google Map</a>
+                <a href={props.link} alt="google map link">View on Map</a>
                 <h2>{props.name}</h2>
                 <h5>{props.visited}</h5>
                 <p>{props.about}<br/>{props.about2}</p>
