@@ -1,4 +1,4 @@
-
+import marker from "../src/assets/marker.png"
 
 export default function Entry(props){
     return (
@@ -9,7 +9,7 @@ export default function Entry(props){
                 <img src={props.img.src} alt={props.img.alt} />
             </div>
             <div className="content">
-                <img className="marker" src="../src/assets/marker.png" alt="marker-logo" />
+                <img className="marker" src={marker} alt="marker-logo" />
                 <span>{props.location}</span>
                 <a href={props.link} alt="google map link">View on Google Map</a>
                 <h2>{props.name}</h2>
