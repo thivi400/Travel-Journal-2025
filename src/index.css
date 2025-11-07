@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: white;
+  font-family: Inter, Roboto;
+
+  padding-top: 50px; /*header - fixed*/
+}
+.container{
+  margin: 55px 45px;
+}
+
+/*===============NavBar================*/
+header{
+  background-color:#16addf;
+  padding: 12px;
+  height: 74px;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header>nav>img{
+  width: 42px;
+  margin-right: 10px;
+}
+header>nav>span{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/*============Atricle ===============*/
+
+article.journal-entry{
+  display: flex;
+  padding: 10px;
+  margin-bottom:20px ;
+}
+
+/* <image> */
+.img-container{
+  width: 250px;
+  height: 336px;
+  overflow: hidden;
+  border-radius: 15px;
+  flex-shrink: 0; /* mobile view image size don't change */ 
+  
+}
+.img-container > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}  /* Now image dimension= div dimension */
+
+
+/* <content> */
+.marker,
+.content span{
+  width: 1rem;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.content a{
+  color: #2b283a;
+  font-size:0.8rem ;
+}
+.content a:visited{
+  color: #918E9B;
+}
+.content{
+  padding: 15px;
+  margin-left: 22px;
+  font-size: 22px;
+}
+.content h2{
+  margin-top: 12px;
+  margin-bottom: 19px;
+}
+.content h5{
+  margin-bottom: 12px;
+}
+.container p{
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.mobile-h2{
+  display: none;
+}
+@media (max-width: 768px) {
+  article.journal-entry{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-h2{
+    display: block ;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 12px;
+    margin-bottom: 19px;
+  }
+  .content>h5{
+    padding-top: 10px;
+  }
+  .content>h2{
+    display: none;
+  }
+  .container p{
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3;      number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
