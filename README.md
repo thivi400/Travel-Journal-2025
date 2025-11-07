@@ -3,9 +3,12 @@
 A  minimal travel journal web app built with **React**, showcasing my destinations with images, details, and links to Google Maps.
 
 ## Live Preview   
-https://mytraveljournal2025.netlify.app/
+https://mytraveljournal2025.netlify.app/   
+<br>
+<br>
+<img width="1264" height="594" alt="image" src="https://github.com/user-attachments/assets/56fb7ee0-8173-4f5e-9b8b-18a05eb1741c" />
 
-
+<br>  
 
 ## 🧰 Tech Stack
 
@@ -13,7 +16,7 @@ https://mytraveljournal2025.netlify.app/
 - **CSS3** — Custom styling for layout and design  
 - **@media Queries** — Used for full mobile responsiveness  
 - **JavaScript (ES6+)** — Logic and interactivity  
-
+<br>   
 
 ## 💡 Features
 
@@ -21,7 +24,7 @@ https://mytraveljournal2025.netlify.app/
 - Reusable React components for each travel entry  
 - Google Maps link integration for each location  
 - Fixed navigation bar   
-
+<br>   
 
 ## 📱 Responsiveness
 
